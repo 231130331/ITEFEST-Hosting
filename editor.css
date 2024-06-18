@@ -1,0 +1,332 @@
+.container{
+    background-color: rgba(238, 239, 240, 1);
+    width: 1440px;
+    font-family:'inter', sans-serif;
+}
+@media (max-width: 1440px){
+    .container{
+        width: 100%;
+    }
+}
+
+nav {
+    background-color: rgba(238, 239, 240, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+nav article {
+    width: 90%;
+    display: flex;
+}
+nav .Editor img{
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    top: 40px;
+    display: flex;
+}
+main .content1,
+main .content2 {
+    margin-right: 25px;
+}
+.content1{
+    float: left;
+    width: 25%; 
+}
+.content1 .status {
+    padding: 8px 5%;
+}
+section article {
+    width: 90%;
+    padding: 10px 5%;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.content1 .seo input[type="text"] {
+    width: 100%;
+    height : 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.content1 .seo textarea{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+}
+@media (max-width: 992px) {
+    .content1 {
+        width: 100%;
+        position: relative;
+        top: 40px;
+        float: none;
+    }
+}
+    
+.content2{
+    float: left;
+    width: 38%;
+}
+.content2 .tengahatas input[type="text"]{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.content2 .tengahatas textarea{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: 160px;
+}
+
+.content2 .tengah_tengah input[type="text"]{
+    width: 100%;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.content2 .posisi {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.content2 .posisi img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.content2 .posisi span {
+    margin-right: 10px;
+}
+.content2 .tengah2 {
+    display: flex;
+    justify-content: center;
+}
+.content2 .tengah2 .varian{
+    margin-right: 36%;
+}
+.content2 .tengah2 .harga{
+    margin-right: 5%;
+}
+.content2 .tengah2 .harga input[type="text"]{
+    height: 22px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.content2 .kuantitas_ukuran{
+    height: 24px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.content2 .kuantitas_ukuran span {
+    width: 80%;
+    color: rgba(132, 132, 132);
+}
+.content2 .kuantitas_ukuran img{
+    width: 7px;
+    height: 15px;
+}
+.content2 .kuantitas_Ukuran{
+    height: 24px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.content2 .tengahbawah .Inventory{
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.content2 .Inventory span {
+    width: 80%;
+    color: rgba(132, 132, 132);
+}
+.content2 .kuantitas_Ukuran img{
+    width: 7px;
+    height: 15px;
+    padding-right: 5px;
+}
+
+@media (max-width: 1200px) {
+    .content2 .tengah2 .varian{
+        margin-right: 26%;
+    }
+}
+@media (max-width: 992px) {
+    .content2 {
+        position: relative;
+        top: 40px;
+        float: none;
+        width: 100%;
+    }
+}
+.content3{
+    float: left;
+    width: 33%;
+}
+.content3 .font-size {
+    font-size: 24px;
+}
+.content3 .landing,
+.content3 .storefront,
+.content3 .funnel,
+.content3 .form{
+    width: 170px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
+}
+.content3 .lingkaran {
+    width: 18px;
+    height: 18px;
+    float: left;
+    border: 3px solid rgb(217, 217, 217);
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+.content3 .lingkaran:hover{
+    background-color: rgb(56, 226, 56);
+}
+
+.content3 .kanantengah .gambar{
+    width: 100%;
+    height: 140px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.2),1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: auto;
+}
+
+.content3 .kanantengah .add{
+    background-color: rgba(41, 191, 255, 0.24);
+    width: 100px;
+    height: 30px;
+    margin: 50px auto 10px;
+    color: rgba(2, 132, 226, 1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content3 .kanantengah .drop{
+    color: rgba(132, 132, 132, 1);
+}
+
+.content3 .kanantengah p{
+    display: flex;
+    justify-content: center;
+}
+
+.content3 .kananbawah{
+    width: 100%;
+    height:180px;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.content3 .kananbawah img{
+    margin: 30px 20px;
+    width: 30%;
+    height: 8vw;
+    border-radius: 10px;
+    float: left;
+}
+
+.content3 .kananbawah .siber, 
+.content3 .kananbawah .versi,
+.content3 .kananbawah .umkum {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.content3 .kananbawah .siber {
+    margin-top: 30px;
+}
+.versi, .umkm{
+    color: rgba(132, 132, 132, 1)
+}
+
+.content3 .kananbawah .orange{
+    width: 100%;
+}
+.content3 .kananbawah .orange button{
+    width: 85px;
+    height: 25px;
+    background-color: #212A31;
+    color: white;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+}
+.content3 .kirim{
+    width: 110px;
+    height: 30px;
+    background-color: #212A31;
+    color: white;
+    border-radius: 10px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 20px;
+    align-self: flex-end;
+}
+@media (max-width: 992px) {
+    main {
+        display: contents;
+    }
+    .content3 {
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .content3 .kananbawah img{
+        width: 20%;
+        height: 14vw;
+    }
+}
